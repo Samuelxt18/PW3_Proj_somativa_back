@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 const connection = require('../database/database');
 
-const modeLivro = connection.define(
+const modelTarefa = connection.define(
     'tbl_tarefa',
     {
         cod_tarefa:{
@@ -18,13 +18,13 @@ const modeLivro = connection.define(
             type:Sequelize.DATE,
             allowNull:true
         },
-        descricao_livro:{
+        descricao_tarefa:{
             type:Sequelize.STRING(500),
-            allowNull:true
+            allowNull:trueS
         },
     }
 );
 
 modeLivro.sync({force:true});
 
-module.exports = modeLivro;
+module.exports = modelTarefa;
