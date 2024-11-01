@@ -20,11 +20,11 @@ const modelTarefa = connection.define(
         },
         descricao_tarefa:{
             type:Sequelize.STRING(500),
-            allowNull:trueS
+            allowNull:true
         },
     }
 );
 
-modeLivro.sync({force:true});
+// modelTarefa.sync({force:true});
 
 module.exports = modelTarefa;
