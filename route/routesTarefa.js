@@ -47,7 +47,7 @@ router.get('/listagemTarefas', (req, res) => {
     });
 });
 
-router.get('/listagemTarefa/:cod_tarefa', (req, res) => {
+router.get('/listagemTarefas/:cod_tarefa', (req, res) => {
     let { cod_tarefa } = req.params;
 
     modelTarefa.findByPk(cod_tarefa)

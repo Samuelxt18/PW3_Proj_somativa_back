@@ -68,7 +68,7 @@ router.get('/listagemCategorias', (req, res)=>{
 });
 
 /* ROTA DE LISTAGEM DE LIVRO POR CÓDIGO DE LIVRO*/
-router.get('/listagemCategoria/:cod_categoria', (req, res)=>{
+router.get('/listagemCategorias/:cod_categoria', (req, res)=>{
 
     let { cod_categoria } = req.params;
 
